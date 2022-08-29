@@ -1,0 +1,522 @@
+* {
+  /* font-family: 'NotoSansKR' !important; */
+  font-family: 'Noto Sans KR' !important;
+  font-style: normal !important;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  background-color: #233044;
+  transition: 0.2s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.nav__small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  max-width: 100%;
+  background-color: #233044;
+  z-index: 99;
+  transition: 0.2s;
+}
+
+.nav__small h1 {
+  padding: 8px 0px;
+  color: #fff;
+  width: 100%;
+  height: 126px;
+}
+
+.nav h1 {
+  flex-grow: 0;
+  padding: 18px 81px 16px 0;
+  width: 100%;
+  height: 126px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.16px;
+  text-align: left;
+  font-family: Stoke;
+}
+
+.nav__closed {
+  width: 0;
+  transition: 0.2s;
+}
+
+.nav__pc-closed {
+  display: none;
+}
+
+.nav__pc {
+  display: block;
+  height: calc(100% - 126px);
+  width: 100%;
+  overflow: auto;
+}
+
+.content__close-nav {
+  width: 100%;
+  height: 100vh;
+}
+
+.small__content {
+  width: 100%;
+  height: 100vh;
+}
+
+.all_content {
+  width: calc(100% - 260px);
+  height: 100% !important;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.header__page {
+  background-color: #fff;
+  width: 100%;
+  height: 56px;
+  padding: 8px 32px 8px 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.header__content {
+  width: 100%;
+  height: calc(100% - 56px);
+}
+
+.nav__bars-btn .icon__menu {
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content__app {
+  width: 100%;
+  height: 100%;
+  padding: 36px 34px 36px;
+  background-color: #f8f5f1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon__menu-nav {
+  color: white;
+}
+
+.hr__menu {
+  color: white !important;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+.content__app-UI {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.reponsive__content-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-blue {
+  background-color: #90caf9 !important;
+  height: 100%;
+}
+
+.bg-red {
+  background-color: #ef9a9a !important;
+  height: 100%;
+}
+
+.bg__posting {
+  height: 100%;
+  padding: 24px 20px 24px 20px;
+  z-index: 1;
+}
+
+.bg-blue-selected {
+  background-color: #5048e5 !important;
+  height: 100% !important;
+}
+
+.reponsive__content-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 8;
+}
+
+/* boards List */
+
+/* sort */
+.bg__posting .content__app-title-boards {
+  width: 100%;
+  height: 18px;
+  font-family: NotoSansKR;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.16px;
+  text-align: left;
+  color: #000;
+}
+
+.body__table-boards .css-1ffbtwm-MuiPaper-root-MuiTableContainer-root {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%);
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+
+.sort__class
+  .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  font-size: 0.75rem;
+}
+
+.sort__class .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 0.75rem;
+  height: 31px;
+}
+
+.sort__class .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 31px;
+  font-size: 0.75rem !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 0.8rem !important;
+}
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 0.8rem !important;
+}
+.css-ks9x1k-MuiPaper-root {
+  font-size: 0.8rem !important;
+}
+.sort__class .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 31px;
+  font-size: 0.8rem;
+}
+.sort__class .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 0.8rem;
+}
+
+/* information */
+.bg__posting .content__app-title-information {
+  width: 100%;
+  height: 18px;
+  font-family: NotoSansKR;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.16px;
+  text-align: left;
+  color: #000;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  margin-right: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-top: 25px;
+}
+
+.chooseCategory {
+  width: 88px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #212529;
+  margin-right: 12px;
+}
+
+.chooseCategory-life {
+  height: 32px;
+  padding-right: 22px;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  height: 32px;
+}
+.chooseCategory-special-report {
+  height: 32px;
+  padding-right: 22px;
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+  height: 32px;
+  width: 32px;
+  padding: 0;
+}
+
+.chooseCategory-behind-story {
+  height: 32px;
+}
+
+.form__info-title {
+  margin-top: 10px;
+  height: 35px;
+}
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 35px;
+}
+
+.form__info-summerNote {
+  margin-top: 10px;
+  width: 100%;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 35px;
+}
+.note-editor.note-airframe .note-statusbar .note-resizebar,
+.note-editor.note-frame .note-statusbar .note-resizebar {
+  padding-top: 0;
+  height: 0;
+  width: 0;
+  cursor: none;
+}
+
+.form__info-create {
+  margin-top: 10px;
+}
+
+.form__write {
+  display: flex;
+}
+
+.input__email {
+  width: calc(100%- 66px);
+}
+
+.input__email-text {
+  width: 100% !important;
+}
+
+.checkInfo {
+  display: flex;
+  align-items: center;
+}
+.checkInfo .titleCheck {
+  color: #212529;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-right: 12px;
+  min-width: 70px;
+}
+.checkInfo .tf {
+  width: 100% !important;
+}
+.checkicon {
+  font-size: 0.8rem;
+  color: #212529;
+}
+.checkInfo .check2 {
+  padding-right: 8px;
+  height: 35px;
+}
+
+.buttonInfo {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+  height: 36px !important;
+  text-transform: none;
+}
+.css-l1eo83-MuiGrid-root {
+  height: 35px !important;
+}
+.css-1ba9cpr-MuiGrid-root {
+  height: 35px !important;
+}
+.table-board {
+  position: relative;
+  padding: 0 !important;
+}
+.progress {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 218, 218, 0.308);
+}
+.css-1e6d7mx-MuiTableRow-root.Mui-selected {
+  background-color: #e3f2fd !important;
+}
+/* color list */
+.css-17yh0za-MuiPaper-root {
+  font-size: 0.8rem !important;
+}
+.css-dsuxgy-MuiTableCell-root {
+  font-size: 0.8rem !important;
+}
+.css-1h37f49-MuiTableCell-root {
+  font-size: 0.8rem !important;
+}
+/* fix summernoter */
+.note-editor.note-frame .note-editing-area .note-editable {
+  height: 374px !important;
+}
+.note-editor.note-airframe .note-statusbar,
+.note-editor.note-frame .note-statusbar {
+  background: none !important;
+  border-top: 0;
+}
+.note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
+  width: 0;
+  padding: 0;
+  border-top: 0;
+}
+.body__sort-boards {
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+.btna {
+  text-transform: none !important;
+  height: 36px;
+}
+.btna:hover {
+  background-color: #1976d2 !important;
+}
+.btnb {
+  background-color: #6c78a0 !important;
+  text-transform: none !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right: 0 !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  font-size: 0.8rem !important;
+}
+.css-v7jfjx-MuiPaper-root {
+  font-size: 0.8rem !important;
+}
+.css-11lu652-MuiGrid-root {
+  max-width: 100% !important;
+}
+.css-1mkphz1-MuiButtonBase-root-MuiMenuItem-root {
+  font-size: 0.8rem !important;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 0.8rem;
+  color: #8f8f8f;
+}
+.css-1nrlq1o-MuiFormControl-root {
+  height: 32px;
+}
+.css-1vv6o7v-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  height: 32px !important;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  color: #ffffff !important;
+}
+/* custom summernote */
+.note-editor .note-toolbar > .note-btn-group {
+  margin-right: 18px;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  font-size: 0.75rem;
+}
+.MuiDataGrid-root .MuiDataGrid-cell {
+  border-bottom: none !important;
+}
+.note-btn-group > .note-btn-group:not(:last-child) > .note-btn,
+.note-btn-group > .note-btn:not(:last-child):not(.dropdown-toggle) {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 0.8rem;
+}
+@media (max-width: 1772px) {
+  .note-editor .note-toolbar > .note-btn-group {
+    margin-right: 5px !important;
+  }
+}
+@media (max-width: 1700px) {
+  .note-editor .note-toolbar > .note-btn-group {
+    margin-right: 18px !important;
+  }
+}
